@@ -6,12 +6,13 @@ let colors = ['#8bd1d3', '#96439d', '#390164', '#cdf5db'];
 function setup() {
   createCanvas(640, 640);
   background(255);
+  colorMode(HSB, 200);
 
   for (let i = 0; i < 10; i++) {
     let startX = random(100, 200);
     let startY = random(100, 200);
-    let amp = random(50, 250);
-    let offset = random(10, 200);
+    let amp = random(50, 300);
+    let offset = random(10, 300);
     let color = random(colors);
     bubbles[i] = new Bubble(startX, startY, 20, amp, offset, color);
   }

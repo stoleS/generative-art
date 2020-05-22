@@ -8,14 +8,15 @@ let colors = ['#8bd1d3', '#96439d', '#390164', '#cdf5db'];
 function setup() {
   createCanvas(640, 640);
   background(255);
+  colorMode(HSB, 200);
   smooth();
   
   translate(width / 2, height / 2);
   
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 60; i++) {
     let circle = {
       r: random(10, 15),
-      distance: random(50, 250),
+      distance: random(50, 310),
       angle: random() * PI * 2,
       color: random(colors)
     };
